@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shearing Process</title>
+    <script
+    src="https://kit.fontawesome.com/9c45bd1b05.js"
+    crossorigin="anonymous"
+    ></script>  
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+        crossorigin="anonymous"
+    />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+/* own css start*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.side-image {
+    width: 100px; /* Adjust the size of the images */
+    height: auto;
+    margin: 0 20px; /* Spacing between the images and title */
+    border-radius: 10px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4b3f72;
+    margin: 0;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    color: #4b3f72;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+.conclusion {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.conclusion h3 {
+    color: #4b3f72;
+    font-size: 1.5rem;
+}
+
+.conclusion p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+    /* nav css start */
+
+    
+  
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(50deg, #f9f9f9 40%, #e4e9fd 60%);
+      color: #333;
+  }
+  .navbar-mainbg {
+      background-color: #4b3f72;
+      position: relative;
+      z-index: 10;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-logo img {
+      height: 40px;
+      vertical-align: middle;
+  }
+  .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, 0.8);
+      transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+  }
+  .navbar-nav .nav-link:hover {
+      color: #4b3f72;
+      background-color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .navbar-nav .nav-item.active .nav-link {
+      color: #fff;
+      background-color: #6f5a9b;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .hero-section {
+      text-align: center;
+      padding: 80px 15px;
+      background: #e4e9fd;
+      border-bottom: 2px solid #4b3f72;
+      position: relative;
+  }
+  .hero-section::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.1);
+      z-index: -1;
+  }
+  .hero-section h1 {
+      font-size: 3.5rem;
+      color: #4b3f72;
+      margin-bottom: 20px;
+  }
+  .hero-section p {
+      font-size: 1.25rem;
+      color: #555;
+      margin-bottom: 30px;
+  }
+  .btn-custom {
+      background-color: #4b3f72;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+  }
+  .btn-custom:hover {
+      background-color: #fff;
+      color: #4b3f72;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .section {
+      padding: 60px 15px;
+  }
+  .section h2 {
+      color: #4b3f72;
+      margin-bottom: 20px;
+  }
+  .section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+  }
+  .feedback-section {
+      text-align: center;
+      padding: 60px 15px;
+      background: #f4f4f4;
+  }
+  .feedback-section hr {
+      border: none;
+      height: 2px;
+      background: #4b3f72;
+      width: 80%;
+      margin: 40px auto;
+  }
+  .feedback-section h3 {
+      margin-bottom: 20px;
+  }
+  @media (min-width: 768px) {
+      .section .row {
+          display: flex;
+          align-items: center;
+      }
+  }
+  </style>
+</head>
+<body>
+
+    <!-- nav start -->
+
+    <nav class="navbar navbar-expand-lg navbar-mainbg">
+      <a class="navbar-brand navbar-logo" href="/home">
+        Wool Market
+        <img src="https://media.tenor.com/jFoLqyTPFeMAAAAi/neko-cute.gif" alt="Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="/home"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="seller"><i class="fas fa-money-bill-wave"></i> Wool Seller</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="marketplace"><i class="fas fa-box"></i> Wool MarketPlace</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="newsAndTrends"><i class="far fa-calendar-alt"></i> News & Trends</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tracking"><i class="far fa-chart-bar"></i> Tracking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="processIntro"><i class="fas fa-chalkboard-teacher"></i> Education & Training</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/discord"><i class="fas fa-users"></i> Community</a>
+          </li>
+          <li class="nav-item">
+            <button id="translateButton" class="btn btn-light"><i class="fas fa-globe"></i> Translate</button>
+          </li> 
+        </ul>
+      </div>
+    </nav>
+     <!-- updated nav bar ends here -->
+      <!-- nav end -->
+
+
+
+      <div class="title-container">
+        <img src="./images/wool.png" class="side-image left">
+        <div class="heading">
+            <h1>Shearing Process in Wool Production</h1>
+        </div>
+        <img src="./images/wool.png" class="side-image right">
+    </div>
+    
+    <div class="content">
+        <div class="intro">
+            <p>
+                The shearing process is a critical step in wool production, involving the skilled and careful removal of a 
+                sheep's fleece or wool coat. This process is typically performed annually and plays a vital role in the overall 
+                health of the sheep, the quality and quantity of wool harvested, and the sustainability of the wool industry. 
+                Here's a detailed explanation of the shearing process:
+            </p>
+        </div>
+    
+        <div class="section">
+            <h3>1. Preparation:</h3>
+            <ul>
+                <li>Shearing usually takes place in a dedicated area known as a shearing shed, where the environment is controlled for the comfort of both the sheep and the shearers.</li>
+                <li>The shearing equipment is set up, including electric clippers, blowers, and sorting bins.</li>
+                <li>Shearers often wear specialized clothing for protection and mobility.</li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h3>2. Sheep Handling:</h3>
+            <ul>
+                <li>Skilled shearers work with the sheep one at a time, gently guiding them onto the shearing stand or table.</li>
+                <li>Proper handling and restraint techniques are employed to ensure the safety of both the sheep and the shearer.</li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h3>3. Shearing Process:</h3>
+            <ul>
+                <li>The shearer uses electric clippers or hand shears to carefully remove the fleece from the sheep's body.</li>
+                <li>The goal is to remove the fleece in one piece, minimizing cuts and damage to the wool.</li>
+                <li>The shearer must work swiftly but with precision to maximize efficiency while ensuring the sheep's well-being.</li>
+                <li>Special attention is paid to removing contaminated or soiled wool from the fleece.</li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h3>4. Quality Control:</h3>
+            <ul>
+                <li>A quality control team may be present to inspect the fleece for any defects, such as cuts, second cuts (shorter fibers resulting from multiple passes), or contaminants.</li>
+                <li>The quality control team ensures that the shearing process meets industry standards and the specific requirements of the wool's end use.</li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h3>5. Collection and Packaging:</h3>
+            <ul>
+                <li>After shearing, the fleece is carefully collected and placed in sorting bins or bags.</li>
+                <li>Each fleece is typically labeled or tagged with information such as the sheep's identification and the date of shearing.</li>
+                <li>The wool is then sorted into different lots based on its quality and characteristics.</li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h3>6. Post-Shearing Care:</h3>
+            <ul>
+                <li>Sheep may receive post-shearing care, including vaccinations, treatments, or relocation to different pastures, to ensure their well-being after the process.</li>
+            </ul>
+        </div>
+    
+        <div class="conclusion">
+            <h3>Conclusion:</h3>
+            <p>
+                In conclusion, the shearing process is a skilled and essential operation in the wool industry. 
+                It not only provides the raw material for wool products but also contributes to the health and welfare of the 
+                sheep. Proper shearing techniques, equipment maintenance, and attention to detail are crucial to maximizing the 
+                yield and quality of the harvested wool, ensuring the sustainability and success of wool farming operations.
+            </p>
+        </div>
+    </div>
+    
+
+    
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <div id="google_translate_element" style="display:none;"></div> 
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE},
+            'google_translate_element'
+          );
+        }
+    
+        document.getElementById('translateButton').addEventListener('click', function () {
+          var translateElement = document.getElementById('google_translate_element');
+          if (!translateElement.innerHTML.trim()) {
+            var script = document.createElement('script');
+            script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+            document.body.appendChild(script);
+            translateElement.style.display = 'block'; // Show the translate element
+          } else {
+            translateElement.style.display = translateElement.style.display === 'none' ? 'block' : 'none'; // Toggle visibility
+          }
+        });
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    
+    <!-- translate button functionality ends here -->
+    
+</body>
+</html>

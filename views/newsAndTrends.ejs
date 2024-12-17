@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Trends</title>
+    
+    <script
+    src="https://kit.fontawesome.com/9c45bd1b05.js"
+    crossorigin="anonymous"
+    ></script>  
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+        crossorigin="anonymous"
+    />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+        body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(50deg, #f9f9f9 40%, #e4e9fd 60%);
+      color: #333;
+    }
+    .navbar-mainbg {
+      background-color: #4b3f72;
+    }
+    .navbar-logo img {
+      height: 40px;
+      vertical-align: middle;
+    }
+    .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, 0.8);
+      transition: color 0.3s;
+      text-decoration: none;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    .navbar-nav .nav-item.active .nav-link {
+      color: #fff;
+      text-decoration: none;
+    }
+    .hero-section {
+      text-align: center;
+      padding: 80px 15px;
+      background: #e4e9fd;
+      border-bottom: 2px solid #4b3f72;
+      position: relative;
+    }
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.1);
+      z-index: -1;
+    }
+    .hero-section h1 {
+      font-size: 3.5rem;
+      color: #4b3f72;
+      margin-bottom: 20px;
+    }
+    .hero-section p {
+      font-size: 1.25rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .btn-custom {
+      background-color: #4b3f72;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: #fff;
+      color: #4b3f72;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .section {
+      padding: 60px 15px;
+    }
+    .section h2 {
+      color: #4b3f72;
+      margin-bottom: 20px;
+    }
+    .section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .feedback-section {
+      text-align: center;
+      padding: 60px 15px;
+      background: #f4f4f4;
+    }
+    .feedback-section hr {
+      border: none;
+      height: 2px;
+      background: #4b3f72;
+      width: 80%;
+      margin: 40px auto;
+    }
+    .feedback-section h3 {
+      margin-bottom: 20px;
+    }
+    .con1{
+    max-width: auto;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 3rem;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+    @media (min-width: 768px) {
+      .section .row {
+        display: flex;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-mainbg">
+    <a class="navbar-brand navbar-logo" href="#">
+      Wool Market
+      <img src="https://media.tenor.com/jFoLqyTPFeMAAAAi/neko-cute.gif" alt="Logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/home"><i class="fas fa-tachometer-alt"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="seller"><i class="far fa-address-book"></i>Wool Seller</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="marketplace"><i class="far fa-clone"></i>Wool MarketPlace</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="newsAndTrends"><i class="far fa-calendar-alt"></i>News & Trends</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tracking"><i class="far fa-chart-bar"></i>Tracking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="processIntro"><i class="far fa-copy"></i>Education & Training</a>
+        </li>
+        <li class="nav-item">
+          <button id="translateButton" class="btn btn-light"><i class="fas fa-globe"></i> Translate</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  
+  
+
+    <!-- nav end -->
+    <div class="container">
+        <div class="row">
+            <div class="con1">News & Trends</div>
+            <div class="col-lg-12">
+                <p class="con2">
+                  India exports woolen yarn fabrics, hand-made carpets, and ready-made garments to Italy, South Korea, the United Kingdom, the United States, Sri Lanka, Germany, Australia, the United Arab Emirates, Sweden, the Netherlands, Oman, Afghanistan, and Tanzania, among others. Source: https://www.mordorintelligence.com/industry-reports/wool-market/market-trends
+                </p>
+                <p class="con3">
+                  According to the ITC Trademap, in 2021, the trade value of wool exported from Australia to China amounted to about USD 1.9 billion. This was the highest trade value of wool exported from Australia that year. Australia is the leading global supplier of wool and the world's largest wool export nation, accounting for 39% of global wool exports.  Source: https://www.mordorintelligence.com/industry-reports/wool-market/market-trends
+                </p>
+                <p class="con4">
+                  The growing consumption of wool among various population groups and favorable production through sheep breeds support the segment's growth during the forecast period. Source: https://www.mordorintelligence.com/industry-reports/wool-market/market-trends
+                </p>
+                <p class="con5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse ac mollis justo. Etiam volutpat tellus quis risus
+                    volutpat, ut posuere ex facilisis. Suspendisse iaculis libero
+                    ante, in posuere ex consectetur quis. Aliquam quis posuere ligula.
+                    Donec ultricies aliquet mauris, ac malesuada leo consequat vel.
+                    Quisque ut egestas justo, vitae molestie ante. Duis quis blandit
+                    augue. Fusce nec velit lectus. Aliquam consectetur mollis orci ut
+                    tempor. Nunc congue, libero non semper aliquam, risus tortor
+                    feugiat sem, in semper nisl erat quis libero. Donec commodo
+                    sollicitudin ex, at pretium lectus viverra quis. Ut placerat nunc
+                    velit, quis euismod nulla egestas vitae. Sed ut ultrices velit.
+                    Nulla facilisi. Donec aliquet nibh et neque interdum gravida.
+                </p>
+                <p class="con6">
+                  The global woolen textiles market size was valued at USD 190.4 billion in 2023 and is expected to grow at a compound annual growth rate (CAGR) of 7.8% from 2024 to 2030. The wool textile market is primarily driven by a growing consumer preference for sustainable and natural fibers. As awareness of environmental concerns rises, wool's biodegradability and renewable nature contribute to its popularity. Additionally, technological advancements in wool processing have enhanced its appeal, resulting in innovative and high-performance wool textiles.
+                <p class="con7">
+                  The fashion industry's increasing focus on eco-friendly and ethical practices further propels the demand for wool. Moreover, the inherent properties of wool, such as insulation, moisture-wicking, and durability, make it a favored choice in various applications. Rising disposable incomes, changing lifestyles, and a resurgence of interest in traditional and natural materials further stimulate the global wool textile market, ensuring a robust and sustainable trajectory.
+                </p>
+                <p class="con8">
+                  The global wool textile market is driven by a convergence of factors, with sustainability emerging as a paramount force. Growing environmental consciousness among consumers has fueled a preference for natural and biodegradable fibers like wool. The textile industry's commitment to eco-friendly practices, coupled with technological innovations in wool processing, has enhanced its appeal. Additionally, the versatile properties of wool, including insulation, moisture-wicking, and durability, contribute to its widespread adoption in various applications. The fashion industry's increasing focus on ethical sourcing and sustainable practices further amplifies the demand for wool textiles. 
+                </p>
+                <p class="con9">
+                  Based on the wool type, the woolen textiles market is segmented into merino wool, lamb’s wool, cashmere wool, and others. The type of wool plays a pivotal role in driving the wool textile market. Fine wool, such as Merino, is prized for its softness and is often associated with luxury products. Medium-grade wool is versatile, finding applications in various textile products. Coarse wool, known for durability, is used in heavy-duty items like carpets. Consumer preferences for specific wool types are influenced by factors such as comfort, insulation, and intended use. The market's ability to offer a diverse range of wool types caters to a wide spectrum of consumer needs, driving demand and ensuring the industry's adaptability to varied market trends.
+                </p>
+                <p class="con10">
+                  Asia Pacific dominated the market in 2023.In the Asia Pacific region, several factors contribute to the growth of the wool textile market. The region's burgeoning population, coupled with rising disposable incomes, propels demand for high-quality and sustainable textiles, including wool. Asia Pacific is a major manufacturing hub for textiles, and the availability of skilled labor contributes to efficient production processes. Moreover, the growing awareness of environmental sustainability aligns with the eco-friendly attributes of wool, fostering its adoption in the region. Rapid urbanization and changing lifestyles also drive the demand for diverse woolen products, from apparel to home textiles.
+                </p>
+                <p class="con11">
+                  In North America, the wool textile market is influenced by a combination of factors. The region's emphasis on fashion trends and premium quality products supports the demand for fine wool textiles. The increasing preference for sustainable and ethically sourced materials aligns with wool's natural and renewable characteristics. Furthermore, the emphasis on outdoor activities and functional clothing enhances the market for wool, given its insulating and moisture-wicking properties. The region's mature retail infrastructure, both online and offline, provides a robust distribution channel for woolen textiles.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="google_translate_element" style="display:none;"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE},
+        'google_translate_element'
+      );
+    }
+
+    document.getElementById('translateButton').addEventListener('click', function () {
+      var translateElement = document.getElementById('google_translate_element');
+      if (!translateElement.innerHTML.trim()) {
+        var script = document.createElement('script');
+        script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        document.body.appendChild(script);
+        translateElement.style.display = 'block'; // Show the translate element
+      } else {
+        translateElement.style.display = translateElement.style.display === 'none' ? 'block' : 'none'; // Toggle visibility
+      }
+    });
+  </script>
+
+</body>
+</html>

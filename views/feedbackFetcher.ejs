@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace</title>
+    <script src="https://kit.fontawesome.com/9c45bd1b05.js" crossorigin="anonymous"></script>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,300,700');
+
+        html {
+            background-color: #E4E9FD;
+            background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+            min-height: 1000px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navimg {
+            height: 35px;
+        }
+
+        h1 {
+            color: #1b1616;
+            padding: 10px;
+        }
+
+        .bigbox, .smallbox {
+          display: flex;
+            max-width: 1000px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feedback-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .feedback-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .feedback-card img {
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .feedback-card-body {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .feedback-card-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .feedback-card-text {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(50deg, #f9f9f9 40%, #e4e9fd 60%);
+      color: #333;
+  }
+  .navbar-mainbg {
+      background-color: #4b3f72;
+      position: relative;
+      z-index: 10;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-logo img {
+      height: 40px;
+      vertical-align: middle;
+  }
+  .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, 0.8);
+      transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+  }
+  .navbar-nav .nav-link:hover {
+      color: #4b3f72;
+      background-color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .navbar-nav .nav-item.active .nav-link {
+      color: #fff;
+      background-color: #6f5a9b;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .hero-section {
+      text-align: center;
+      padding: 80px 15px;
+      background: #e4e9fd;
+      border-bottom: 2px solid #4b3f72;
+      position: relative;
+  }
+  .hero-section::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.1);
+      z-index: -1;
+  }
+  .hero-section h1 {
+      font-size: 3.5rem;
+      color: #4b3f72;
+      margin-bottom: 20px;
+  }
+  .hero-section p {
+      font-size: 1.25rem;
+      color: #555;
+      margin-bottom: 30px;
+  }
+  .btn-custom {
+      background-color: #4b3f72;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+  }
+  .btn-custom:hover {
+      background-color: #fff;
+      color: #4b3f72;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .section {
+      padding: 60px 15px;
+  }
+  .section h2 {
+      color: #4b3f72;
+      margin-bottom: 20px;
+  }
+  .section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+  }
+  .feedback-section {
+      text-align: center;
+      padding: 60px 15px;
+      background: #f4f4f4;
+  }
+  .feedback-section hr {
+      border: none;
+      height: 2px;
+      background: #4b3f72;
+      width: 80%;
+      margin: 40px auto;
+  }
+  .feedback-section h3 {
+      margin-bottom: 20px;
+  }
+  @media (min-width: 768px) {
+      .section .row {
+          display: flex;
+          align-items: center;
+      }
+  }
+    </style>
+</head>
+<body>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-mainbg">
+      <a class="navbar-brand navbar-logo" href="/home">
+        Wool Market
+        <img src="https://media.tenor.com/jFoLqyTPFeMAAAAi/neko-cute.gif" alt="Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="/home"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="seller"><i class="fas fa-money-bill-wave"></i> Wool Seller</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="marketplace"><i class="fas fa-box"></i> Wool MarketPlace</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="newsAndTrends"><i class="far fa-calendar-alt"></i> News & Trends</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tracking"><i class="far fa-chart-bar"></i> Tracking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="processIntro"><i class="fas fa-chalkboard-teacher"></i> Education & Training</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/discord"><i class="fas fa-users"></i> Community</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+    <div class="smallbox" id="heading">
+        <h1>Reviews & Feedbacks</h1>
+    </div>
+
+    <div class="bigbox" style="background-image: -webkit-linear-gradient(50deg, white 40%, #ffdbac 60%);">
+        <div class="container">
+            <% newListItems.forEach(user => { %>
+                <div class="feedback-card">
+                    <img src="./images/wool3.png" alt="Wool Image">
+                    <div class="feedback-card-body">
+                        <h5 class="feedback-card-title">Wool Quality: <%= user.woolQuality %></h5>
+                        <p class="feedback-card-text">Wool Colour: <%= user.woolColor %></p>
+                        <p class="feedback-card-text">Name of Farmer: <%= user.farmerName %></p>
+                        <p class="feedback-card-text">Rating of Farmer: <%= user.rateFarmer %></p>
+                        <p class="feedback-card-text">Rating of Wool: <%= user.rateWool %></p>
+                        <p class="feedback-card-text">About Wool: <%= user.shortDescription %></p>
+                        <p class="feedback-card-text">Product Id: <%= user.productid %></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
