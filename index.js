@@ -362,9 +362,8 @@ app.get("/tracking",fetchTracking);
 // console.log('article', article);
 
 
+const PORT = process.env.PORT || 3000;
 
-
-app.listen(3000,function(){
-    console.log("http://localhost:3000/");
-    console.log("The server is started at port 3000");
-})
+app.listen(PORT, function () {
+    console.log(`Server running on port ${PORT}`);
+});
