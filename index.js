@@ -6,7 +6,15 @@ import orderRecord from "./model/OrderSchema.js";
 import loginRecord from "./model/Login.js";
 import feedbackRecord from "./model/FeedbackSchema.js";
 import path from 'path';
+import dotenv from 'dotenv';
+
 import { fileURLToPath } from 'url';
+
+
+// ✅ Static Middleware AFTER __dirname is defined
+
+dotenv.config();
+
 
 
 const app = express();
@@ -17,21 +25,11 @@ app.set("view engine", "ejs");
 
 
 
-const uri = "mongodb+srv://anushka7926:anu@anushka.uhd9u.mongodb.net/";
+
+const uri = process.env.MONGO_URI;
 
 
-
-mongoose.connect(
-  uri,
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-).then(() => {
-  console.log("Connected to MongoDB!");
-}).catch((err) => {
-  console.error("MongoDB connection error:", err);
-});
+mongoose.connect(process.env.MONGO_URI);
 
 
 
@@ -43,7 +41,7 @@ mongoose.connect(
 // Simulate __dirname in ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
+app.use("/images", express.static(path.join(__dirname, "images")));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
